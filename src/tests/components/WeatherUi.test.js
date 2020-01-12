@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import WeatherUi, { onDelete, onChange } from '../../components/WeatherUi';
+import WeatherUi, { onDelete } from '../../components/WeatherUi';
 
 jest.mock('../../components/AutomComplete', () => 'AutomCompleteMock');
 jest.mock('../../components/Cards', () => 'CardsMock');
@@ -22,6 +22,7 @@ describe('WeatherUi', () => {
 
   afterEach(() => {
     wrapper = null
+    jest.fn().mockClear();
   })
 
   it('renders correctly', () => {

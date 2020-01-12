@@ -8,8 +8,8 @@ import PropTypes from 'prop-types';
    { displayDeleteButton && <p className='deleteButton' > X </p> }
      <div className={containerStyle}>
        <h3>{name}</h3>
-       <p>Min: {min}  &#8451;</p>
-       <p>Max: {max}   &#8451;</p>
+       <p>Min: {min} &#8490;</p>
+       <p>Max: {max} &#8490;</p>
      </div>
     </div>
  )

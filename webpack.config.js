@@ -28,9 +28,6 @@ module.exports = {
       },
     ],
   },
-  plugins: [
-    // new HtmlWebpackPlugin(),
-  ],
   devServer: {
     contentBase: path.join(__dirname, 'src'),
     compress: true,

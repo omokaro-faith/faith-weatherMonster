@@ -10,7 +10,7 @@ export const mapStateToProps = state => ({
   errorMsg: state.message,
 });
 
-const mapDispatchToProps = (dispatch) => ({
+export const mapDispatchToProps = (dispatch) => ({
   getWeather: city => dispatch(getWeatherForCity(city)),
   getWeatherForCities: () => dispatch(getWeatherForCities()),
   removeCity: id => dispatch(removeCity(id))

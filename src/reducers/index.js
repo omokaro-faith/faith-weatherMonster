@@ -11,7 +11,7 @@ export default (state = initialState, action) => {
       if (state.city.length === 0) return {...state, city: [...state.city, city]};
       const duplicateCity = state.city.find((item) => item.name === city.name);
 
-      return !duplicateCity ? {...state, city: [...state.city, city], message: '' } : {...state, message: 'Duplicate City Not Allowed In List' } 
+      return duplicateCity ? {...state, message: 'Duplicate City Not Allowed In List' } : {...state, city: [...state.city, city], message: '' }
     case 'SET_CITIES_WEATHER':
       const { cities } = action;
       return {...state, cities};

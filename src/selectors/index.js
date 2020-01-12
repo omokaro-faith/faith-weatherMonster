@@ -9,8 +9,8 @@ export const getSortedCities = createSelector(
 )
 
 export const getOptions  = createSelector(
-  [citiesSelector, citySelector],
-  (cities, cityArray) => {
+  citiesSelector,
+  cities => {
     const defaultArray = [];
 
     cities.forEach((city, index) => {
